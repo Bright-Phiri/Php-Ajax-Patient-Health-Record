@@ -14,7 +14,7 @@ class DB {
         $this->db_name = "healthcare_db";
         self::$conn = new mysqli($this->host, $this->user, $this->pass, $this->db_name);
         if (self::$conn->connect_error) {
-            die("Failed to coonnect to the database");
+            die("Failed to coonnect to the server");
         }
     }
 
