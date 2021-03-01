@@ -25,25 +25,20 @@
                         <h5 class="card-title text-center">Create Account</h5>
                         <form class="form-signin" id="create-account-from">
                             <div class="form-label-group">
-                                <input type="text" id="username" name="username" class="form-control"
-                                    placeholder="Username" autofocus>
+                                <input type="text" id="username" name="username" class="form-control" placeholder="Username" autofocus>
                             </div>
                             <div class="form-label-group">
-                                <input type="email" id="email" name="email" class="form-control"
-                                    placeholder="Email address" required>
+                                <input type="email" id="email" name="email" class="form-control" placeholder="Email address" required>
                             </div>
 
                             <div class="form-label-group">
-                                <input type="password" id="password" name="password" class="form-control"
-                                    placeholder="Password">
+                                <input type="password" id="password" name="password" class="form-control" placeholder="Password">
                             </div>
 
                             <div class="form-label-group">
-                                <input type="password" id="confirm-password" name="confirm-password"
-                                    class="form-control" placeholder="Confirm Password">
+                                <input type="password" id="confirm-password" name="confirm-password" class="form-control" placeholder="Confirm Password">
                             </div>
-                            <button class="btn btn-lg btn-primary btn-block text-uppercase" type="button"
-                                id="createAccountBtn">Sign
+                            <button class="btn btn-lg btn-primary btn-block text-uppercase" type="button" id="createAccountBtn">Sign
                                 up</button>
                             <hr class="my-4">
                             <p class="text-center">Already have an account? <a href="login.php">Sign In</a></p>

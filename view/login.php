@@ -31,8 +31,7 @@
                             <div class="form-label-group">
                                 <input type="password" id="password" class="form-control" placeholder="Password">
                             </div>
-                            <button class="btn btn-lg btn-primary btn-block text-uppercase" type="button"
-                                id="loginBtn">Sign
+                            <button class="btn btn-lg btn-primary btn-block text-uppercase" type="button" id="loginBtn">Sign
                                 in</button>
                             <hr class="my-4">
                             <p class="text-center">Dont have an Account? <a href="create_account.php">Create Account</a>

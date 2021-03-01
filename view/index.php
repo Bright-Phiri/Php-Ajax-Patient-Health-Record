@@ -12,14 +12,14 @@ include('sidebar.php');
             <di class="col-12 justify-content-between d-flex">
                 <h5> <i class="fa fa-home ml-2" style="color:#007BFF"></i> Dashboard</h5>
                 <?php
-                        if (isset($_SESSION['username']) && $_SESSION['username'] != NULL){
-                            ?>
-                <h5>
-                    <?php echo $_SESSION['username']?><i class="fa fa-user-circle ml-2"></i>
-                </h5>
+                if (isset($_SESSION['username']) && $_SESSION['username'] != NULL) {
+                ?>
+                    <h5>
+                        <?php echo $_SESSION['username'] ?><i class="fa fa-user-circle ml-2"></i>
+                    </h5>
                 <?php
-                        }
-                        ?>
+                }
+                ?>
             </di>
         </div>
     </div>
@@ -34,7 +34,7 @@ include('sidebar.php');
                             <div class="col">
                                 <h6 class="text-center">All Patients</h6>
                                 <h5 class="text-center text-white">
-                                    <?php 
+                                    <?php
                                     require_once('../model/mysqli.php');
                                     require_once('../model/Patient.php');
                                     $patient = new Patient();
@@ -55,7 +55,7 @@ include('sidebar.php');
                             <div class="col">
                                 <h6 class="text-center">Patient's health records</h6>
                                 <h5 class="text-center text-white">
-                                    <?php 
+                                    <?php
                                     require_once('../model/mysqli.php');
                                     require_once('../model/Patient.php');
                                     $patient = new Patient();
@@ -76,7 +76,7 @@ include('sidebar.php');
                             <div class="col">
                                 <h6 class="text-center">All Users / Providers</h6>
                                 <h5 class="text-center text-white">
-                                    <?php 
+                                    <?php
                                     require_once('../model/mysqli.php');
                                     require_once('../model/Provider.php');
                                     $provider = new Provider();
@@ -93,4 +93,4 @@ include('sidebar.php');
         </div>
     </div>
     <!-- End of Page Content-->
-    <?php include('footer.php');?>
+    <?php include('footer.php'); ?>

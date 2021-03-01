@@ -8,8 +8,7 @@
     <link rel="icon" href="../resources/patient_diagnosis.png" type="image/x-icon">
     <link rel="stylesheet" href="../resources/css/bootstrap.min.css">
     <link rel="stylesheet" href="../resources/css/dataTables.min.css">
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
     <link rel="stylesheet" href="../resources/css/timeline.css">
     <script src="../resources/js/jquery-3.5.1.min.js"></script>
     <link rel="stylesheet" href="../resources/css/all.css">

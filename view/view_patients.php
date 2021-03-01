@@ -13,8 +13,7 @@ include('sidebar.php');
     <div class="container-fluid">
         <div class="row">
             <div class="col-12">
-                <div class="modal fade" id="deleteUserModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                    aria-hidden="true">
+                <div class="modal fade" id="deleteUserModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered">
                         <div class="modal-content">
                             <div class="modal-header">
@@ -46,4 +45,4 @@ include('sidebar.php');
         </div>
     </div>
     <!-- End of Page Content-->
-    <?php include('footer.php');?>
+    <?php include('footer.php'); ?>

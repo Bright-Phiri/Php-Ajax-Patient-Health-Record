@@ -8,28 +8,28 @@ $password = $_POST['password'];
 $confirm_password = $_POST['confirm-password'];
 $response = array();
 $provider = new Provider();
-if ($provider->checkIfUsernameExists($username)){
+if ($provider->checkIfUsernameExists($username)) {
     $response[0] = "Warning";
     $response[1] = "This username is already taken";
     $response[2] = "warning";
     $response[3] = "Ok";
     echo json_encode($response);
-} else if ($provider->checkIfEmailExists($email)){
+} else if ($provider->checkIfEmailExists($email)) {
     $response[0] = "Warning";
     $response[1] = "This email address is already connected to an account";
     $response[2] = "warning";
     $response[3] = "Ok";
     echo json_encode($response);
-} else{
+} else {
     $password = sha1($password);
-    $provider->set_provider($username,$email,$password);
-    if ($provider->add_provider($provider)){
+    $provider->set_provider($username, $email, $password);
+    if ($provider->add_provider($provider)) {
         $response[0] = "Success";
         $response[1] = "Account successfully created";
         $response[2] = "success";
         $response[3] = "Ok";
         echo json_encode($response);
-    } else{
+    } else {
         $response[0] = "Error";
         $response[1] = "Failed to create account";
         $response[2] = "error";
@@ -37,6 +37,4 @@ if ($provider->checkIfUsernameExists($username)){
         echo json_encode($response);
     }
 }
-
-
 ?>

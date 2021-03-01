@@ -23,13 +23,11 @@ include('sidebar.php');
                             <div class="form-group row">
                                 <div class="form-group col-5">
                                     <label for="firstname">First Name</label>
-                                    <input type="text" id="firstname" name="firstname" class="form-control"
-                                        placeholder="First Name">
+                                    <input type="text" id="firstname" name="firstname" class="form-control" placeholder="First Name">
                                 </div>
                                 <div class="form-group col-5">
                                     <label for="lastname">Last Name</label>
-                                    <input type="text" id="lastname" name="lastname" class="form-control"
-                                        placeholder="Last Name">
+                                    <input type="text" id="lastname" name="lastname" class="form-control" placeholder="Last Name">
                                 </div>
                             </div>
                             <div class="form-group row">
@@ -50,13 +48,11 @@ include('sidebar.php');
                                 <div class="form-group col-5">
                                     <label for="district">District</label>
 
-                                    <input type="text" id="district" name="district" class="form-control"
-                                        placeholder="District">
+                                    <input type="text" id="district" name="district" class="form-control" placeholder="District">
                                 </div>
                                 <div class="form-group col-5">
                                     <label for="village">Village</label>
-                                    <input type="text" id="village" name="village" class="form-control"
-                                        placeholder="Home Village">
+                                    <input type="text" id="village" name="village" class="form-control" placeholder="Home Village">
                                 </div>
                             </div>
                             <div class="form-group row">
@@ -91,4 +87,4 @@ include('sidebar.php');
         </div>
     </div>
     <!-- End of Page Content-->
-    <?php include('footer.php');?>
+    <?php include('footer.php'); ?>

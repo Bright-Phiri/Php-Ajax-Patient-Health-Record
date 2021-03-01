@@ -41,8 +41,7 @@
 <!-- End of Logout modal -->
 
 <!-- Medical Record modal -->
-<div class="modal fade" id="medicalRecord" tabindex="-1" role="dialog" aria-labelledby="modelTitleId"
-    aria-hidden="true">
+<div class="modal fade" id="medicalRecord" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
             <div class="modal-header">
@@ -54,7 +53,7 @@
             <div class="modal-body">
                 <form id="health-records-form">
                     <input type="hidden" id="patient-id" name="patient-id">
-                    <input type="hidden" id="username" name="username" value="<?php echo $_SESSION['username']?>">
+                    <input type="hidden" id="username" name="username" value="<?php echo $_SESSION['username'] ?>">
                     <div class="form-group">
                         <label for="weight">Weight (Kgs)</label>
                         <input type="text" class="form-control" id="weight" name="weight" placeholder="Weight">
@@ -65,8 +64,7 @@
                     </div>
                     <div class="form-group">
                         <label for="temp_reading">Temperature reading <span>&#8451;</span> </label>
-                        <input type="text" class="form-control" id="temp_reading" name="temp_reading"
-                            placeholder="Temp reading">
+                        <input type="text" class="form-control" id="temp_reading" name="temp_reading" placeholder="Temp reading">
                     </div>
                     <div class="form-group">
                         <label for="diagnosis">Diagnosis</label>
@@ -147,8 +145,7 @@
 <!-- End of Medical Record modal -->
 
 <!-- View Medical Record modal -->
-<div class="modal fade" id="viewMedicalRecord" tabindex="-1" role="dialog" aria-labelledby="modelTitleId"
-    aria-hidden="true">
+<div class="modal fade" id="viewMedicalRecord" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
             <div class="modal-header">
