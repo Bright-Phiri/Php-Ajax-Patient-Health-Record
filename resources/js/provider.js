@@ -70,6 +70,13 @@ function userLogin() {
         }
     })
 
+    $("input[type='password']").keypress(function(e){
+        var code = e.which;
+        if (code == 13){
+            $("#loginBtn").click();
+        }
+    })
+
     $("#cancel-add-user-btn").click(function() {
         $("form").trigger("reset");
     })
