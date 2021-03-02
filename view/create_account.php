@@ -26,6 +26,7 @@
                         <form class="form-signin" id="create-account-from">
                             <div class="form-label-group">
                                 <input type="text" id="username" name="username" class="form-control" placeholder="Username" autofocus>
+                                <p class="text-danger" id="username_status"></p>
                             </div>
                             <div class="form-label-group">
                                 <input type="email" id="email" name="email" class="form-control" placeholder="Email address" required>

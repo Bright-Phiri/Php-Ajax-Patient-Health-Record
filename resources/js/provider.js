@@ -2,6 +2,19 @@ $(document).ready(function() {
     createAccount();
     userLogin();
     viewUsers();
+
+    $("#username").on('keyup blur',function(){
+        var username = $(this).val();
+        $.post('../Controller/createAccountController.php',{username:username},function(response){
+            if (response == "true"){
+                $("#username_status").text("That username is taken. Try another");
+                $("#createAccountBtn").attr("disabled",true);
+            } else{
+                $("#username_status").text("");
+                $("#createAccountBtn").removeAttr("disabled");
+            }
+        })
+    })
 })
 
 function createAccount() {
