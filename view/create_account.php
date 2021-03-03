@@ -29,15 +29,18 @@
                                 <p class="text-danger" id="username_status"></p>
                             </div>
                             <div class="form-label-group">
-                                <input type="email" id="email" name="email" class="form-control" placeholder="Email address" required>
+                                <input type="email" id="email" name="email" class="form-control" placeholder="Email address">
+                                <p class="text-danger" id="email_status"></p>
                             </div>
 
                             <div class="form-label-group">
                                 <input type="password" id="password" name="password" class="form-control" placeholder="Password">
+                                <p class="text-danger" id="password_status"></p>
                             </div>
 
                             <div class="form-label-group">
                                 <input type="password" id="confirm-password" name="confirm-password" class="form-control" placeholder="Confirm Password">
+                                <p class="text-danger" id="confirm_password_status"></p>
                             </div>
                             <button class="btn btn-lg btn-primary btn-block text-uppercase" type="button" id="createAccountBtn">Sign
                                 up</button>

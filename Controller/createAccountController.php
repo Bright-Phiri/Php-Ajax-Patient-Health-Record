@@ -2,19 +2,22 @@
 require_once('../model/mysqli.php');
 require_once('../model/Provider.php');
 require_once('../resources/functions.php');
-if (isset($_POST['username'])){
+$provider = new Provider();
+if (isset($_POST['username'])) {
     $username = $_POST['username'];
-    $provider = new Provider();
     if ($provider->checkIfUsernameExists($username)) {
         echo "true";
     }
-} else{
-
+} else if (isset($_POST['email'])) {
     $email = $_POST['email'];
+    if ($provider->checkIfEmailExists($email)) {
+        echo "true";
+    }
+} else {
     $password = $_POST['password'];
     $confirm_password = $_POST['confirm-password'];
     $response = array();
-    
+
     if ($provider->checkIfUsernameExists($username)) {
         $response[0] = "Warning";
         $response[1] = "This username is already taken";
@@ -45,5 +48,3 @@ if (isset($_POST['username'])){
         }
     }
 }
-
-?>
