@@ -33,7 +33,7 @@ class Provider extends DB {
         return $result->num_rows;
     }
 
-    function login($email, $password) {
+    public function login($email, $password) {
         $response = array();
         $query = "SELECT * FROM providers WHERE email = ? AND password = ?";
         $pre = self::$conn->prepare($query);
